@@ -4,7 +4,7 @@
             "id": 0,
             "project_name": "Random Quote Generator",
             "description": "This was my first JavaScript project.",
-            "technologies": "JavaScript and HTML",
+            "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://stahlman99.github.io/Treehouse-project-1/",
             "github_link": "https://github.com/Stahlman99/Treehouse-project-1",
             "image_urls": []
@@ -13,7 +13,7 @@
             "id": 1,
             "project_name": "Data Pagination and Filtering",
             "description": "This single-page application displays a list of students and applies search functionality.",
-            "technologies": "JavaScript, HTML, and CSS",
+            "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://stahlman99.github.io/Treehouse-project-2/",
             "github_link": "https://github.com/Stahlman99/Treehouse-project-2",
             "image_urls": []
@@ -22,7 +22,7 @@
             "id": 2,
             "project_name": "My First Interactive Form",
             "description": "This is a sample form to sign up for a conference. It was my first experience with validation in JavaScript.",
-            "technologies": "JavaScript, HTML, and CSS",
+            "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://stahlman99.github.io/Treehouse-project-3/",
             "github_link": "https://github.com/Stahlman99/Treehouse-project-3/",
             "image_urls": []
@@ -31,7 +31,7 @@
             "id": 3,
             "project_name": "OOP Game Show App",
             "description": "This was my first project after diving deep into OOP (Object Oriented Programming).",
-            "technologies": "JavaScript, HTML, and CSS",
+            "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://stahlman99.github.io/Treehouse-project-4/",
             "github_link": "https://github.com/Stahlman99/Treehouse-project-4",
             "image_urls": []
@@ -40,7 +40,7 @@
             "id": 4,
             "project_name": "Api Requests",
             "description": "This was my first project after learning about API requests and JavaScript promises.",
-            "technologies": "JavaScript, HTML, and CSS",
+            "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://github.com/Stahlman99/Treehouse-project-5/",
             "github_link": "https://stahlman99.github.io/Treehouse-project-5/",
             "image_urls": []
