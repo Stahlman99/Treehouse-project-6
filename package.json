@@ -1,0 +1,23 @@
+{
+  "name": "treehouse-project-6",
+  "version": "1.0.0",
+  "description": "A simple app using Express and Node.js to display a portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stahlman99/Treehouse-project-6.git"
+  },
+  "author": "Nathan Stahlman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stahlman99/Treehouse-project-6/issues"
+  },
+  "homepage": "https://github.com/Stahlman99/Treehouse-project-6#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.0"
+  }
+}
