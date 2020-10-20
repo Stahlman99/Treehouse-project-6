@@ -4,7 +4,7 @@ html(class="no-js" lang="en" dir="ltr")
     meta(charset='utf-8')
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title Portfolio Site
+    title My Portfolio
     link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
     link(rel='stylesheet', href='/static/css/foundation.css')
     link(rel='stylesheet', href='/static/css/style.css')
@@ -14,22 +14,19 @@ html(class="no-js" lang="en" dir="ltr")
         block sidebar
           br
           .cell.shrink
-            img.thumbnail(src='https://placehold.it/550x350')
+            img.thumbnail(src='/static/images/Profile_Front-Yard-Tie.jpg')
           .cell.auto
 
-            //- Add your name here.
             h5 Nathan Stahlman
 
-            //- Add text here to describe who you are, what you do, and why you are so awesome.
             p.text-light
-              i "Nerd: One who's unbridled passion for something, or things, defines who they are as a person,
+              i "Nerd: One who's unbridled passion for something, or things, defines who they are as a person, 
               i without fear of other people's judgement."
               | - Zachary Levi. I love this quote because that is the
               | best descriptions of myself I have ever heard! I have spent my life learning, learning more, and
               | then spewing my newfound knowledge upon unsuspecting people (usually my poor parents and siblings).
-              | I love traveling, being involved with my church, video games, and pretty much everything else you
-              | can think of. My biggest passion is web development, and I am trying to make a career of it!
-            //- Add about page route to the href below. 
+              | I love traveling, being involved with my church, video games, and pretty much everything else I
+              | can think of to do. My biggest passion is development, and I am trying to make a career of it!
             a(href='/about') Learn More →
 
     .off-canvas-content(data-off-canvas-content='')
@@ -37,7 +34,6 @@ html(class="no-js" lang="en" dir="ltr")
         .title-bar-left
           button.menu-icon(type='button', data-toggle='my-info')
 
-          //- Add your name here.  This is for the mobile screen sized version.
           span.title-bar-title Nathan Stahlman
       block content
         

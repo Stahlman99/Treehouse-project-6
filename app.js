@@ -26,7 +26,7 @@ app.use('/static', express.static('public'));
 
 //Route to the 'Home' page
 app.get('/', (req, res) => {
-    res.locals = data.projects;
+    res.locals.projects = data.projects;
     res.render('index');
 });
 
@@ -35,9 +35,13 @@ app.get('/about', (req, res) => {
     res.render('about');
 });
 
+app.get('/projects', (req, res) => {
+    res.redirect('/');
+});
+
 // Route to the projects.
 app.get('/project/:id', (req, res, next) => {
-    res.locals = data.projects;
+    res.locals.projects = data.projects;
     let { id } = req.params;
     res.locals.id = id;
 
