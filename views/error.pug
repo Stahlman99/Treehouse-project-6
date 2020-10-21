@@ -1,0 +1,29 @@
+extends layout.pug
+
+block content
+    nav.grid-container.portfolio-breadcrumb
+        a(href='/') ← Back
+    article.grid-container.portfolio-intro
+
+        h1 Uh oh. It looks like there was an error.
+
+        br
+        h1 See details:
+
+        p.lead.text-light
+            if error.status !== undefined
+                b Error status:
+                | #{error.status}
+            else
+                b Error status: 
+                | undefined
+            br
+            br
+            if error.message !== undefined
+                b Error message: 
+                | #{error.message}`
+                br
+                br
+            if error.stack !== undefined
+                b Stack: 
+                | #{error.stack}

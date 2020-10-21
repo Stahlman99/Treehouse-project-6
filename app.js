@@ -6,6 +6,7 @@
 const express = require('express');
 const data = require('./data/data.json');
 
+
 /*
 // Set up
 */
@@ -17,6 +18,8 @@ const app = express();
 app.set('view engine', 'pug');
 // Set the route to the public files to '/static'
 app.use('/static', express.static('public'));
+// Custom error to be used for displaying error data.
+let custError = undefined;
 
 
 /*
@@ -45,7 +48,7 @@ app.get('/project/:id', (req, res, next) => {
     let { id } = req.params;
     res.locals.id = id;
 
-    // Checks to see it the projects exists. If not, it sends a custom error.
+    // Checks to see if the projects exists. If not, it sends a custom error.
     if (id >= data.projects.length) {
         const err = new Error(`Project ${id} does not exist.`);
         err.status = 404;
@@ -56,22 +59,46 @@ app.get('/project/:id', (req, res, next) => {
     res.render('project');
 });
 
+// Routes to 404 page.
+app.get('/page-not-found', (req, res) => {
+    const err = new Error('Page not found');
+    err.status = 404;;
+
+    res.locals.error = err;
+
+    console.log(`${err} / Status ${err.status}`);
+    res.render('page-not-found');
+});
+
+
+app.get('/error', (req, res) => {
+
+    if (custError === undefined) {
+        return res.redirect('page-not-found')
+    }
+
+    res.locals.error = custError;
+    res.render('error');
+    custError = undefined;
+});
+
 
 /*
 // Error Handlers
 */
 
+
 // 404 'Not found' error.
-app.use((req, res, next) => {
-    const err = new Error('Not found');
-    err.status = 404;
-    next(err);
+app.use((req, res) => {
+    res.redirect('page-not-found');
 });
 
 // Error handler for all other errors.
 app.use((err, req, res, next) => {
     console.log(`${err} / Status ${err.status}`);
-    res.send(`<h1>${err} / Status ${err.status}</h1>`);
+
+    custError = err;
+    res.redirect('error');
 });
 
 
