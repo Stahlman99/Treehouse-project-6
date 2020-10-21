@@ -11,19 +11,19 @@ block content
         h1 See details:
 
         p.lead.text-light
-            if error.status !== undefined
-                b Error status:
-                | #{error.status}
+            if err.status !== undefined
+                b Error status: 
+                | #{err.status}
             else
                 b Error status: 
                 | undefined
             br
             br
-            if error.message !== undefined
+            if err.message !== undefined
                 b Error message: 
-                | #{error.message}`
+                | #{err.message}`
                 br
                 br
-            if error.stack !== undefined
+            if err.stack !== undefined
                 b Stack: 
-                | #{error.stack}
+                | #{err.stack}

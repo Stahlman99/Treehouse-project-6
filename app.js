@@ -59,30 +59,6 @@ app.get('/project/:id', (req, res, next) => {
     res.render('project');
 });
 
-// Routes to 404 page.
-app.get('/page-not-found', (req, res) => {
-    const err = new Error('Page not found');
-    err.status = 404;;
-
-    res.locals.error = err;
-
-    console.log(`${err} / Status ${err.status}`);
-    res.render('page-not-found');
-});
-
-
-app.get('/error', (req, res) => {
-
-    if (custError === undefined) {
-        return res.redirect('page-not-found')
-    }
-
-    res.locals.error = custError;
-    res.render('error');
-    custError = undefined;
-});
-
-
 
 /*
 // Error Handlers
@@ -91,7 +67,7 @@ app.get('/error', (req, res) => {
 
 // 404 'Not found' error.
 app.use((req, res) => {
-    res.redirect('/page-not-found');
+    res.status(404).render('page-not-found');
 });
 
 // Error handler for all other errors.
@@ -99,8 +75,15 @@ app.use((err, req, res, next) => {
 
     console.log(`${err} / Status ${err.status}`);
 
-    custError = err;
-    res.redirect('error');
+    if (err.status === 404) {
+        res.status(404).render('page-not-found');
+    } else {
+        err.message = err.message || 'Oops! There was an error on the server.';
+        if (err.status === undefined){
+            err.status = 500;
+        }
+        res.status(err.status).render('error', { err } );
+    }
 });
 
 
