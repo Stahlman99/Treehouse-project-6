@@ -11,8 +11,9 @@ block content
 
       br
       p.lead.text-light
-        b Error status: 
-        | #{error.status}
-        br
-        b Error message: 
-        | #{error.message}
+        if error !== undefined
+          b Error status: 
+          | #{error.status}
+          br
+          b Error message: 
+          | #{error.message}
