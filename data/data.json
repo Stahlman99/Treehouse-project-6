@@ -44,6 +44,24 @@
             "live_link": "https://stahlman99.github.io/Treehouse-project-5/",
             "github_link": "https://github.com/Stahlman99/Treehouse-project-5/",
             "image_urls": [ "/static/images/project_4_thumb.png", "/static/images/project_4_1.png", "/static/images/project_4_2.png", "/static/images/project_4_3.png" ]
+        },
+        {
+            "id": 5,
+            "project_name": "Portfolio Site",
+            "description": "This was my first project with Node/Express. It is the site you are on right now!",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "/",
+            "github_link": "https://github.com/Stahlman99/Treehouse-project-6/",
+            "image_urls": [ "/static/images/project_5_thumb.png" ]
+        },
+        {
+            "id": 6,
+            "project_name": "React Image App",
+            "description": "This was my first React project! It is an image searching app built with React/Node and uses the Pexels API.",
+            "technologies": ["JavaScript", "HTML", "CSS", "Node", "React"],
+            "live_link": "https://image-search-app-stahlman.netlify.app",
+            "github_link": "https://github.com/Stahlman99/Treehouse-project-7/",
+            "image_urls": [ "/static/images/project_6_thumb.png", "/static/images/project_6_1.png", "/static/images/project_6_2.png", "/static/images/project_6_3.png" ]
         }
     ]
 }
