@@ -46,15 +46,18 @@ app.get('/projects', (req, res) => {
 app.get('/project/:id', (req, res, next) => {
     res.locals.projects = data.projects;
     let { id } = req.params;
-    res.locals.id = id;
+    // The array is reversed
+    res.locals.id = ((data.projects.length - id));
 
     // Checks to see if the projects exists. If not, it sends a custom error.
-    if (id >= data.projects.length) {
+    if ((id - 1) >= data.projects.length) {
         const err = new Error(`Project ${id} does not exist.`);
         err.status = 404;
         err.id = `Project ${id} does not exist.`;
         next(err);
     }
+
+    
 
     res.render('project');
 });
