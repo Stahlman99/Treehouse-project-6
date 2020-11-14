@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Stahlman99/Treehouse-project-6#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "node": "^15.2.0",
     "nodemon": "^2.0.6",
     "pug": "^3.0.0",
     "update": "^0.7.4"
