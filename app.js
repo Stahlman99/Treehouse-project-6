@@ -46,6 +46,7 @@ app.get('/projects', (req, res) => {
 app.get('/project/:id', (req, res, next) => {
     res.locals.projects = data.projects;
     let { id } = req.params;
+    // The array is reversed
     res.locals.id = ((data.projects.length - id));
 
     // Checks to see if the projects exists. If not, it sends a custom error.
