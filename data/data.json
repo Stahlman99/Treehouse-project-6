@@ -1,52 +1,25 @@
 {
     "projects": [
         {
-            "id": 0,
-            "project_name": "Random Quote Generator",
-            "description": "This was my first JavaScript project.",
-            "technologies": ["JavaScript", "HTML", "CSS"],
-            "live_link": "https://stahlman99.github.io/Treehouse-project-1/",
-            "github_link": "https://github.com/Stahlman99/Treehouse-project-1",
-            "image_urls": [ "/static/images/project_0_thumb.png", "/static/images/project_0_1.png" ]
+            "id": 8,
+            "project_name": "Sequelize Library App",
+            "description": "This is a functional library app that I built using Express/Node, Sequelize ORM, and SQlite3.",
+            "technologies": ["JavaScript", "HTML", "CSS", "Node", "SQlite3", "Sequelize", "Express"],
+            "live_link": "https://sequelize-library-app.herokuapp.com/",
+            "github_link": "https://github.com/Stahlman99/Treehouse-project-8",
+            "image_urls": [ "/static/images/project_7_thumb.png", "/static/images/project_7_1.png", "/static/images/project_7_2.png" ]
         },
         {
-            "id": 1,
-            "project_name": "Data Pagination and Filtering",
-            "description": "This single-page application displays a list of students and applies search functionality.",
-            "technologies": ["JavaScript", "HTML", "CSS"],
-            "live_link": "https://stahlman99.github.io/Treehouse-project-2/",
-            "github_link": "https://github.com/Stahlman99/Treehouse-project-2",
-            "image_urls": [ "/static/images/project_1_thumb.png", "/static/images/project_1_1.png", "/static/images/project_1_2.png" ]
+            "id": 7,
+            "project_name": "React Image App",
+            "description": "This was my first React project! It is an image searching app built with React/Node and uses the Pexels API.",
+            "technologies": ["JavaScript", "HTML", "CSS", "Node", "React"],
+            "live_link": "https://image-search-app-stahlman.netlify.app",
+            "github_link": "https://github.com/Stahlman99/Treehouse-project-7/",
+            "image_urls": [ "/static/images/project_6_thumb.png", "/static/images/project_6_1.png", "/static/images/project_6_2.png", "/static/images/project_6_3.png" ]
         },
         {
-            "id": 2,
-            "project_name": "My First Interactive Form",
-            "description": "This is a sample form to sign up for a conference. It was my first experience with validation in JavaScript.",
-            "technologies": ["JavaScript", "HTML", "CSS"],
-            "live_link": "https://stahlman99.github.io/Treehouse-project-3/",
-            "github_link": "https://github.com/Stahlman99/Treehouse-project-3/",
-            "image_urls": [ "/static/images/project_2_thumb.png", "/static/images/project_2_1.png", "/static/images/project_2_2.png", "/static/images/project_2_3.png" ]
-        },
-        {
-            "id": 3,
-            "project_name": "OOP Game Show App",
-            "description": "This was my first project after diving deep into OOP (Object Oriented Programming).",
-            "technologies": ["JavaScript", "HTML", "CSS"],
-            "live_link": "https://stahlman99.github.io/Treehouse-project-4/",
-            "github_link": "https://github.com/Stahlman99/Treehouse-project-4",
-            "image_urls": [ "/static/images/project_3_thumb.png", "/static/images/project_3_1.png", "/static/images/project_3_2.png" ]
-        },
-        {
-            "id": 4,
-            "project_name": "Api Requests",
-            "description": "This was my first project after learning about API requests and JavaScript promises.",
-            "technologies": ["JavaScript", "HTML", "CSS"],
-            "live_link": "https://stahlman99.github.io/Treehouse-project-5/",
-            "github_link": "https://github.com/Stahlman99/Treehouse-project-5/",
-            "image_urls": [ "/static/images/project_4_thumb.png", "/static/images/project_4_1.png", "/static/images/project_4_2.png", "/static/images/project_4_3.png" ]
-        },
-        {
-            "id": 5,
+            "id": 6,
             "project_name": "Portfolio Site",
             "description": "This was my first project with Node/Express. It is the site you are on right now!",
             "technologies": ["JavaScript", "HTML", "CSS"],
@@ -55,13 +28,49 @@
             "image_urls": [ "/static/images/project_5_thumb.png" ]
         },
         {
-            "id": 6,
-            "project_name": "React Image App",
-            "description": "This was my first React project! It is an image searching app built with React/Node and uses the Pexels API.",
-            "technologies": ["JavaScript", "HTML", "CSS", "Node", "React"],
-            "live_link": "https://image-search-app-stahlman.netlify.app",
-            "github_link": "https://github.com/Stahlman99/Treehouse-project-7/",
-            "image_urls": [ "/static/images/project_6_thumb.png", "/static/images/project_6_1.png", "/static/images/project_6_2.png", "/static/images/project_6_3.png" ]
+            "id": 5,
+            "project_name": "API Requests",
+            "description": "This was my first project after learning about API requests and JavaScript promises.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://stahlman99.github.io/Treehouse-project-5/",
+            "github_link": "https://github.com/Stahlman99/Treehouse-project-5/",
+            "image_urls": [ "/static/images/project_4_thumb.png", "/static/images/project_4_1.png", "/static/images/project_4_2.png", "/static/images/project_4_3.png" ]
+        },
+        {
+            "id": 4,
+            "project_name": "OOP Game Show App",
+            "description": "This was my first project after diving deep into OOP (Object Oriented Programming).",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://stahlman99.github.io/Treehouse-project-4/",
+            "github_link": "https://github.com/Stahlman99/Treehouse-project-4",
+            "image_urls": [ "/static/images/project_3_thumb.png", "/static/images/project_3_1.png", "/static/images/project_3_2.png" ]
+        },
+        {
+            "id": 3,
+            "project_name": "My First Interactive Form",
+            "description": "This is a sample form to sign up for a conference. It was my first experience with validation in JavaScript.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://stahlman99.github.io/Treehouse-project-3/",
+            "github_link": "https://github.com/Stahlman99/Treehouse-project-3/",
+            "image_urls": [ "/static/images/project_2_thumb.png", "/static/images/project_2_1.png", "/static/images/project_2_2.png", "/static/images/project_2_3.png" ]
+        },
+        {
+            "id": 2,
+            "project_name": "Data Pagination and Filtering",
+            "description": "This single-page application displays a list of students and applies search functionality.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://stahlman99.github.io/Treehouse-project-2/",
+            "github_link": "https://github.com/Stahlman99/Treehouse-project-2",
+            "image_urls": [ "/static/images/project_1_thumb.png", "/static/images/project_1_1.png", "/static/images/project_1_2.png" ]
+        },
+        {
+            "id": 1,
+            "project_name": "Random Quote Generator",
+            "description": "This was my first JavaScript project.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://stahlman99.github.io/Treehouse-project-1/",
+            "github_link": "https://github.com/Stahlman99/Treehouse-project-1",
+            "image_urls": [ "/static/images/project_0_thumb.png", "/static/images/project_0_1.png" ]
         }
     ]
 }
