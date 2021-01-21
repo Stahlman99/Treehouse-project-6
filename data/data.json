@@ -1,6 +1,24 @@
 {
     "projects": [
         {
+            "id": 10,
+            "project_name": "React Courses App",
+            "description": "This is a functional app that I built using React, and it utilizes the REST API I built in the previous project.",
+            "technologies": ["React", "HTML", "CSS", "JavaScript", "REST API" ],
+            "live_link": "https://react-courses-site.netlify.app/",
+            "github_link": "https://github.com/Stahlman99/Treehouse-project-10",
+            "image_urls": [ "/static/images/project_9_thumb.png", "/static/images/project_9_1.png", "/static/images/project_9_2.png" ]
+        },
+        {
+            "id": 9,
+            "project_name": "Courses REST API",
+            "description": "This is a functional RESTful API built with Express/Node, Sequelize ORM, and SQlite3. It allows users to create accounts, create courses, and update courses that they have created. The list of courses and their details are viewable without a login.",
+            "technologies": ["JavaScript", "HTML", "CSS", "Node", "SQlite3", "Sequelize", "Express", "REST API"],
+            "live_link": "https://rest-api-fsjs.herokuapp.com/",
+            "github_link": "https://github.com/Stahlman99/Treehouse-project-9",
+            "image_urls": [ "/static/images/project_8_thumb.png" ]
+        },
+        {
             "id": 8,
             "project_name": "Sequelize Library App",
             "description": "This is a functional library app that I built using Express/Node, Sequelize ORM, and SQlite3.",
